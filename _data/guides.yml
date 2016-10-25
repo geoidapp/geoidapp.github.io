@@ -1,0 +1,22 @@
+bigheader: "Guides"
+abstract: "How to get started, and achieve tasks, using GeoidApp"
+toc:
+- title: Guides
+  path: /docs/
+
+- title: Getting Started
+  section:
+  - title: What is GeoidApp?
+    path: /docs/whatisgeoidapp/
+  - title: Installing GeoidApp
+    path: /docs/getting-started-guides/geoidapp/
+  - title: Hello World on GeoidApp
+    path: /docs/hellogeoidapp/
+
+
+- title: User Guide
+  section:
+  - title: User Guide
+    path: /docs/user-guide/
+  - title: Math Concepts
+    path: /docs/user-guide/math-physics-concepts

@@ -1,0 +1,67 @@
+{% for thistoc in site.data.globals.tocs %}{% if foundTOC %}{% break %}{% else %}{% assign tree = site.data[thistoc].toc %}{% include tocsearch.html %}{% endif %}{% endfor %}
+{% for override in site.data.overrides.overrides %}{% if page.path contains override.path %}{% assign notitle = "true" %}{% endif %}{% endfor %}
+<!Doctype html>
+<html id="docs" class="{{site.data[foundTOC].bigheader}}">
+
+{% include head-header.html %}
+
+<!--  HERO  -->
+<section id="hero" class="light-text">
+  <h1>{{ site.data[foundTOC].bigheader }}</h1>
+  <h5>{{ site.data[foundTOC].abstract }}</h5>
+  <div id="vendorStrip" class="light-text">
+    <ul>
+      <li><a href="/docs/" {% if site.data[foundTOC].bigheader == "Guides" %}class="YAH"{% endif %}>GUIDES</a></li>
+      <li><a href="/docs/tutorials/" {% if site.data[foundTOC].bigheader == "Tutorials" %}class="YAH"{% endif %}>TUTORIALS</a></li>
+      <li><a href="/docs/tasks/" {% if site.data[foundTOC].bigheader == "Tasks" %}class="YAH"{% endif %}>TASKS</a></li>
+      <li><a href="/docs/concepts/" {% if site.data[foundTOC].bigheader == "Concepts" %}class="YAH"{% endif %}>CONCEPTS</a></li>
+      <li><a href="/docs/reference" {% if site.data[foundTOC].bigheader == "Reference Documentation" %}class="YAH"{% endif %}>REFERENCE</a></li>
+      <li><a href="/docs/tools" {% if site.data[foundTOC].bigheader == "Tools" %}class="YAH"{% endif %}>TOOLS</a></li>
+      <li><a href="/docs/samples" {% if site.data[foundTOC].bigheader == "Samples" %}class="YAH"{% endif %}>SAMPLES</a></li>
+      <li><a href="/docs/troubleshooting/" {% if site.data[foundTOC].bigheader == "Support" %}class="YAH"{% endif %}>SUPPORT</a></li>
+    </ul>
+    <div id="searchBox">
+      <input type="text" id="search" placeholder="Search" onkeydown="if (event.keyCode==13) window.location.replace('/docs/search/?q=' + this.value)">
+    </div>
+  </div>
+</section>
+
+<section id="encyclopedia">
+  <div id="docsToc">
+        <div class="pi-accordion">
+        {% assign tree = site.data[foundTOC].toc %}{% include tree.html %}
+        </div> <!-- /pi-accordion -->
+    <button class="push-menu-close-button" onclick="kub.toggleToc()"></button>
+  </div> <!-- /docsToc -->
+  <div id="docsContent">
+        <p><a href="/editdocs#{{ page.path }}" id="editPageButton">Edit This Page</a></p>
+      {% if notitle != "true" %}<h1>{{ title }}</h1>{% endif %}
+    {{ content }}
+  </div>
+
+		<a href="" onclick="window.open('https://github.com/geoid/geoidapp.github.io/issues/new?title=Issue%20with%20' +
+		window.location.pathname)" class="button issue">Create Issue</a>
+		<a href="/editdocs#{{ page.path }}" class="button issue">Edit This Page</a>
+	</div>
+</section>
+
+{% include footer.html %}
+
+<button class="flyout-button" onclick="kub.toggleToc()"></button>
+
+<style>
+  .cse .gsc-control-cse, .gsc-control-cse, {
+    padding: 0;
+  }
+  .gsc-control-cse table, .gsc-control-cse-en table {
+    margin:0px !important;
+  }
+  .gsc-above-wrapper-area {
+    border-bottom: 0;
+  }
+</style>
+
+<!-- Commenting out AnswerDash for now; we need to work on our list of questions/answers/design first
+<!-- Start of AnswerDash script <script>var AnswerDash;!function(e,t,n,s,a){if(!t.getElementById(s)){var i,r=t.createElement(n),c=t.getElementsByTagName(n)[0];e[a]||(i=e[a]=function(){i.__oninit.push(arguments)},i.__oninit=[]),r.type="text/javascript",r.async=!0,r.src="https://p1.answerdash.com/answerdash.min.js?siteid=756",r.setAttribute("id",s),c.parentNode.insertBefore(r,c)}}(window,document,"script","answerdash-script","AnswerDash");</script> <!-- End of AnswerDash script -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+---
+title: Khartoum case study
+---
+
+<!Doctype html>
+<html id="caseStudies" class="gridPage">
+{% include head-header.html %}
+
+<section id="hero" class="light-text">
+	<h1> Khartoum Case Study</h1>
+</section>
+
+<section id="mainContent">
+	<main>
+		<div class="content">
+			<h3 id="caseStudyTitle">Using GeoidApp to evaluate recent GOCE/GRACE models on Khartoum</h3>
+			<p>
+				Sudan, like other developing countries lack a unified datum. We have had a datum, but it's too outdated, and can't be used a reliable reference. In 2008 Ahmed Abdalla proposed a new datum for Sudan, which is by far more accurate than any previous attempts. Our research is not by any mean interested in establishing a new datum for Sudan.
+			</p>
+				<div class="feature">
+				<img src="/images/case_studies/pearson.png" alt="khartoum">
+				<p class="quote">
+					“This is far from being trivial: we now have a method to replace leveling, a tedious and time-consuming old fashioned method with GPS leveling, a fast and modern technique.”				</p>
+				<p class="attrib">— Moritz et al, Physical Geodesy 2</p>
+			</div>
+		</div>
+	</main>
+</section>
+
+<section class="bullets">
+	<main>
+		<div class="content">
+			<div class="bullet">
+				<h4>Challenges:</h4>
+				<ul>
+					<li>We have a few terrestrial data to evaluate ICGEM models on</li>
+					<li>Obtaining such a data is not even an easy task.</li>
+				</ul>
+			</div>
+			<div class="bullet">
+				<h4>Why GeoidApp:</h4>
+				<ul>
+					<li>GeoidApp relies on Molodnskey of using the quasi-geoid instead of geoid.</li>
+					<li>We can use parameters from satellite to solve for various degree and order for spherical harmonics.</li>
+
+				</ul>
+			</div>
+			<div class="bullet">
+				<h4>Approach:</h4>
+				<ul>
+					<li>Use the new method of modeling the earth instead of the old-expensive method</li>
+					<li>Try different models, with different degrees and evaluate each with respect to our terrestrial data.</li>
+					<li>Choose the model and degree that result in the smallest standard deviation</li>
+				</ul>
+			</div>
+			<div class="bullet">
+				<h4>Results:</h4>
+				<p>We found very interesting results. One thing we found is that the standard deviation largerly changed from the old astrogeodetic data, compared to recent GPS/leveling data. Which suggests that the previous data can no longer be used.</p>
+				<ul>
+					<li>We need more GPS/leveling data to evaluate ICGEM models.</li>
+
+				</ul>
+			</div>
+		</div>
+	</main>
+</section>
+
+<section class="details">
+	<main>
+		<div class="content">
+			<h4>About the theory</h4>
+			<p>Maybe I'll get to write it later. It will be about using spherical harmonics for modeling the earth.</p>
+		</div>
+	</main>
+</section>
+
+
+{% include footer.html %}
+{% include case-study-styles.html %}
+
+</body>
+</html>
