@@ -9,14 +9,45 @@ toc:
   - title: What is GeoidApp?
     path: /docs/whatisgeoidapp/
   - title: Installing GeoidApp
-    path: /docs/getting-started-guides/geoidapp/
+    path: /docs/getting-started-guides/Installing/
   - title: Hello World on GeoidApp
     path: /docs/hellogeoidapp/
 
 
-- title: User Guide
+- title: Math and Physics Concepts
   section:
-  - title: User Guide
-    path: /docs/user-guide/
+  - title: Math 101
+    path: /docs/math-physics-concepts/
   - title: Math Concepts
-    path: /docs/user-guide/math-physics-concepts
+    path: /docs/math-physics-concepts/earths-figure-problem
+  - title: Global Geopotential Models
+    path: /docs/math-physics-concepts/ggm
+  - title: Modern approach
+    path: /docs/math-physics-concepts/modern-approach
+  - title: ICGEM
+    path: /docs/math-physics-concepts/icgem
+
+- title: Programming Aspects
+  section:
+    - title: Programming Aspects
+      path: /docs/programming-aspects/
+
+- title: Practical Considerations
+  section:
+    - title: Practical Considerations
+      path: /docs/practical-considerations/
+
+- title: FAQs
+  section:
+    - title: FAQs
+     path: /docs/faqs/
+
+- title: Acknowledgments
+  section:
+    - title: Acknowledgments
+      path: /docs/acknowledgments/
+
+- title: About the Authors
+  section:
+    - title: About the Authors
+      path: /docs/about-authors/
