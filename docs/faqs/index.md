@@ -4,7 +4,7 @@ assignees:
  - wdjaafar
 ---
 
-## FAQs
+## Answers for common questions
 
 ### Will it be open source?
 
@@ -12,4 +12,8 @@ I really don't know. I believe there will be an open source version of GeoidApp.
 
 ### Why there is not a GUI yet?
 
-Because I'm kinda perfectionist! I hate Matlab GUIDE, so I stuck with the command line version, until we figure a way to make a nice GUI. We have different choices, Microsoft Visual Studio is in the top of them. We have a GUI for the mobile version, and it's really cool supporting Google's Material Design concepts. We will have a web version very soon, and it'll definitely come with a nice styling.
+Because I'm kinda perfectionist! I hate Matlab GUIDE, so we stuck with the command line version, until we figure a way to make a nice GUI. We have different choices, Microsoft Visual Studio is in the top of them. We have a GUI for the mobile version, and it's really cool supporting Google's Material Design concepts. We will have a web version very soon, and it'll definitely come with a nice styling.
+
+### Will you ever get married to her? Even after all these sacrifice?
+
+I'll let you know. Hopefully, yes :D
