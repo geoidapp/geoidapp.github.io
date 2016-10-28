@@ -3,11 +3,11 @@
 
 {% capture overview %}
 This page shows how to stage content that you want to contribute
-to the Kubernetes documentation.
+to the GeoidApp documentation.
 {% endcapture %}
 
 {% capture prerequisites %}
-Create a fork of the Kubernetes documentation repository as described in
+Create a fork of the GeoidApp documentation repository as described in
 [Creating a Documentation Pull Request](/docs/contribute/create-pull-request/).
 {% endcapture %}
 
@@ -33,11 +33,11 @@ the master branch.
 
 ### Staging a pull request
 
-When you create pull request against the Kubernetes documentation
+When you create pull request against the GeoidApp documentation
 repository, you can see your changes on a staging server.
 
 1. In your GitHub account, in your new branch, submit a pull request to the
-kubernetes/kubernetes.github.io repository. This opens a page that shows the
+GeoidApp/GeoidApp.github.io repository. This opens a page that shows the
 status of your pull request.
 
 1. Click **Show all checks**. Wait for the **deploy/netlify** check to complete.
@@ -48,20 +48,10 @@ site where you see your changes.
 
 You can use the k8sdocs Docker image to run a local staging server. If you're
 interested, you can view the
-[Dockerfile](https://github.com/kubernetes/kubernetes.github.io/blob/master/staging-container/Dockerfile){: target="_blank"}
+[Dockerfile](https://github.com/GeoidApp/GeoidApp.github.io/blob/master/staging-container/Dockerfile){: target="_blank"}
 for this image.
 
-1. Install Docker if you don't already have it.
 
-1. Clone your fork to your local development machine.
-
-1. In the root of your cloned repository, enter this command to start a local
-web server:
-
-        docker run -ti --rm -v "$PWD":/k8sdocs -p 4000:4000 gcr.io/google-samples/k8sdocs:1.0
-
-1. View your staged content at
-[http://localhost:4000](http://localhost:4000){: target="_blank"}.
 
 ### Staging locally without Docker
 

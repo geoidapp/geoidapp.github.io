@@ -4,7 +4,7 @@
 <!--<html>
 <body>-->
 
-<p>These page templates are available for writers who would like to contribute new topics to the Kubernetes docs:</p>
+<p>These page templates are available for writers who would like to contribute new topics to the GeoidApp docs:</p>
 
 <ul>
     <li><a href="#task_template">Task</a></li>
@@ -12,7 +12,7 @@
     <li><a href="#concept_template">Concept</a></li>
 </ul>
 
-<p>The page templates are in the <a href="https://github.com/kubernetes/kubernetes.github.io/tree/master/_includes/templates" target="_blank">_includes/templates</a> directory of the <a href="https://github.com/kubernetes/kubernetes.github.io">kubernetes.github.io</a> repository.
+<p>The page templates are in the <a href="https://github.com/GeoidApp/GeoidApp.github.io/tree/master/_includes/templates" target="_blank">_includes/templates</a> directory of the <a href="https://github.com/GeoidApp/GeoidApp.github.io">GeoidApp.github.io</a> repository.
 
 <h3 id="task_template">Task template</h3>
 
@@ -71,14 +71,14 @@ Here's an interesting thing to know about the steps you just did.
 
 <p>Here's an example of a published topic that uses the task template:</p>
 
-<p><a href="/docs/tasks/access-kubernetes-api/http-proxy-access-api">Using an HTTP Proxy to Access the Kubernetes API</a></p>
+<p><a href="/docs/tasks/access-GeoidApp-api/http-proxy-access-api">Using an HTTP Proxy to Access the GeoidApp API</a></p>
 
 <h3 id="tutorial_template">Tutorial template</h3>
 
 <p>A tutorial page shows how to accomplish a goal that is larger than a single
 task. Typically a tutorial page has several sections, each of which has a
 sequence of steps. For example, a tutorial might provide a walkthrough of a
-code sample that illustrates a certain feature of Kubernetes. Tutorials can
+code sample that illustrates a certain feature of GeoidApp. Tutorials can
 include surface-level explanations, but should link to related concept topics
 for deep explanations.
 
@@ -145,61 +145,6 @@ Here's something interesting about the code you ran in the preceding steps.
 </pre>
 {% endraw %}
 
-<p>Here's an example of a published topic that uses the tutorial template:</p>
-
-<p><a href="/docs/tutorials/stateless-application/run-stateless-application-deployment/">Running a Stateless Application Using a Deployment</a></p>
-
-<h3 id="concept_template">Concept template</h3>
-
-<p>A concept page explains some aspect of Kubernetes. For example, a concept
-page might describe the Kubernetes Deployment object and explain the role it
-plays as an application is deployed, scaled, and updated. Typically, concept
-pages don't include sequences of steps, but instead provide links to tasks or
-tutorials.
-
-<p>To write a new concept page, create a Markdown file in a subdirectory of the
-/docs/concepts directory. In your Markdown file,  provide values for these
-variables, and then include templates/concept.md:</p>
-
-<ul>
-    <li>overview - required</li>
-    <li>body - required</li>
-    <li>whatsnext - optional</li>
-</ul>
-
-<p>Here's an example of a page that uses the concept template:</p>
-
-{% raw %}
-<pre>---
----
-
-{% capture overview %}
-This page explains ...
-{% endcapture %}
-
-{% capture body %}
-### Understanding ...
-
-Kubernetes provides ...
-
-### Using ...
-
-To use ...
-{% endcapture %}
-
-{% capture whatsnext %}
-* Learn more about [this](...).
-* See this [related task](...).
-{% endcapture %}
-
-{% include templates/concept.md %}
-</pre>
-{% endraw %}
-
-<p>Here's an example of a published topic that uses the concept template:</p>
-
-<p><a href="/docs/concepts/object-metadata/annotations">Annotations</a></p>
 
 <!--</body>
 </html>-->
-
