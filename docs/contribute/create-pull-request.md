@@ -20,7 +20,7 @@ repository. This page shows how to create a pull request.
 
 {% capture steps %}
 
-### Creating a fork of the Kubernetes documentation repository
+### Creating a fork of the GeoidApp documentation repository
 
 1. Go to the
 [geoidapp/geoidapp.github.io](https://github.com/geoidapp/geoidapp.github.io){: target="_blank"}
