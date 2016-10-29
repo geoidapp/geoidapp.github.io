@@ -6,7 +6,8 @@ assignees:
 ---
 
 # Acknowledgments
-We would like to acknowledge the following authors/institutions, editdocs
+We would like to acknowledge the following authors/institutions, individuals, etc.
+
 - Ahmed Abdalla. He is our supervisor, he is the guy behind all of these things, without him none of this will ever happen. I know words cannot describe what we want to say. I really don't have anything to say.
 
 - The guy behind copy/paste. I don't know you, but you're a hero in my eyes. I owe just everything.
