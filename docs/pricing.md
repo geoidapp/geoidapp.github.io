@@ -13,6 +13,8 @@ You are a small company and you just cannot afford the enterprise version? Or, y
 # We also have after-pay services
 Any suite of our application comes with a free support for two weeks. We also have training --for underlying math and physics behind **GeoidApp**. The best thing yet, is that we will have very _soon_ a web application for GeoidApp where you can use our advanced visualization tool to have a better insight about your data. No just that, we will also generate a report that include the results, shows some statistics, and visualization, you name it.
 
+<br>
+
 # Our prices
 
 <table>
