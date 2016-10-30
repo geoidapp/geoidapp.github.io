@@ -27,4 +27,4 @@ We would like to acknowledge the following authors/institutions, individuals, et
 
 - Ahmed Alamin. I just love you man, and you know that. You are the best guy I've ever met.
 
-- HER -- although I might end-up in some hospital, but really thank you.
+- HER -- I just appreciate everything you have done for me. I can't say how pleased am I.

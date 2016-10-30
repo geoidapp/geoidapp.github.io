@@ -1,0 +1,5 @@
+bigheader: "Pricing"
+abstract: "Our plans for GeoidApp"
+toc:
+- title: Plans
+  path: /docs/pricing
